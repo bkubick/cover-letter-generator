@@ -1,0 +1,42 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+body {
+  @apply bg-secondary cursor-default
+}
+
+@media only screen and (min-width: 768px) {
+  #root {
+      background: transparent radial-gradient(40% 40% at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), rgba(0, 209, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%) no-repeat 0 0
+  }   
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-primary-outline {
+  @apply text-primary border-2 border-primary transition ease-in-out duration-150 inline-block;
+}
+
+.btn-primary-outline:hover {
+  @apply -translate-y-1 shadow-md shadow-primary;
+}
+
+.textarea-input {
+  @apply rounded text-white font-mono text-xs bg-transparent border-2 border-gray-400;
+
+  line-height: 18px;
+  padding: 8px 8px 8px 12px;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.input {
+  @apply rounded text-white font-mono text-xs bg-transparent border-2 border-gray-400;
+
+  line-height: 18px;
+  padding: 8px 8px 8px 12px;
+}
