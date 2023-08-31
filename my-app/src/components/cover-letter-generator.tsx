@@ -88,7 +88,7 @@ class CoverLetterGenerator extends React.Component<Props, State> {
             }
         });
 
-        return prompt;
+        return prompt.trimStart();
     }
 
     /**
@@ -322,7 +322,7 @@ class CoverLetterGenerator extends React.Component<Props, State> {
                 <div className='col-span-7 lg:overflow-hidden'>
                     <div className='overflow-y-scroll no-scrollbar px-5'>
                         <div className='lg:h-screen'>
-                            <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+                            <div className="sticky top-0 backdrop-blur z-10 text-sm font-medium text-center text-gray-200 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
                                 <ul className="flex flex-wrap -mb-px">
                                     <li className="mr-2">
                                         <a 
