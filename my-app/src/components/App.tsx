@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CoverLetterGenerator from './cover-letter-generator';
+
 
 interface Props {}
 
@@ -33,7 +35,7 @@ class App extends React.Component<Props, State> {
     render() {
         return (
             <div id='app' className='container mx-auto h-screen flex'>
-              App
+              <CoverLetterGenerator />
             </div>
         )
     }
